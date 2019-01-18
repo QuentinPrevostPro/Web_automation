@@ -1,5 +1,5 @@
 def mkdiruby
-    abort("Veuillez saisir un nom de projet.") if ARGV.empty?
+    abort("Veuillez saisir un nom de projet.:wq") if ARGV.empty?
     Dir.mkdir(ARGV.join(" "))
     Dir.mkdir("#{ARGV.join(" ")}/lib")
     readme = File.open("#{ARGV.join(" ")}/README.md", "w")
