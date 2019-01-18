@@ -10,6 +10,7 @@ def mkdiruby
     gitignore.puts(".env")
     Dir.chdir("#{ARGV.join(" ")}") {
         system("rspec --init")
+        system("bundle install")
     }
 end
 
