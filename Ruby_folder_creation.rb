@@ -2,6 +2,7 @@ def mkdiruby
     abort("Veuillez saisir un nom de projet.") if ARGV.empty?
     Dir.mkdir(ARGV.join(" "))
     Dir.mkdir("#{ARGV.join(" ")}/lib")
+    Dir.mkdir("#{ARGV.join(" ")}/db")
     readme = File.open("#{ARGV.join(" ")}/README.md", "w")
     gemfile = File.open("#{ARGV.join(" ")}/Gemfile", "w")
     env = File.open("#{ARGV.join(" ")}/.env", "w")
