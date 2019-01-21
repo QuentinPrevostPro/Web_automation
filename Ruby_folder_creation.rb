@@ -23,8 +23,5 @@ def mkdiruby
 end
 
 mkdiruby
-
-=begin
-    
-=end    
+  
 
